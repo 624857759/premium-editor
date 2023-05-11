@@ -1,0 +1,51 @@
+{
+  "name": "@obsidians/premium-editor",
+  "version": "0.3.0",
+  "author": "Phil <qft.gtr@gmail.com>",
+  "source": "src/index.js",
+  "main": "src/index.js",
+  "browser": "dist/index.es.js",
+  "files": [
+    "dist",
+    "main"
+  ],
+  "engines": {
+    "node": "16"
+  },
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-external-helpers": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-function-bind": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
+    "@babel/preset-env": "^7.7.5",
+    "@babel/preset-react": "^7.7.4",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-url": "^4.0.2",
+    "@svgr/rollup": "^5.2.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^6.0.3",
+    "node-sass": "^6.0.0",
+    "rollup": "^2.37.1",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-postcss": "^2.3.0"
+  },
+  "peerDependencies": {
+    "@obsidians/code-editor": "*",
+    "@obsidians/workspace": "*",
+    "solhint": "*",
+    "solium": "*",
+    "solparse-exp-jb": "*",
+    "monaco-editor": "*"
+  }
+}
